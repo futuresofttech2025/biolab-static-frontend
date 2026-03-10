@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+/* ═══ Background images ═══════════════════════════════ */
+.bg-lab-hero { background: linear-gradient(135deg,rgba(2,6,23,.72) 0%,rgba(6,78,59,.50) 50%,rgba(2,6,23,.68) 100%), url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat; }
+.bg-lab-microscope { background: linear-gradient(135deg,rgba(2,6,23,.68) 0%,rgba(6,78,59,.50) 100%), url('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=2080&q=80') center/cover no-repeat; }
+.bg-lab-dna { background: linear-gradient(to right,rgba(240,253,250,.88),rgba(204,251,241,.85)), url('https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat; }
+.bg-lab-tubes { background: linear-gradient(135deg,rgba(2,6,23,.72) 0%,rgba(6,78,59,.55) 100%), url('https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat; }
+.bg-lab-cells { background: linear-gradient(to right,rgba(240,253,250,.90),rgba(209,250,229,.87)), url('https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat; }
+.bg-dashboard { background: linear-gradient(160deg, #f0fdf9 0%, #ecfdf5 50%, #f0fdf4 100%); min-height: 100vh; }
+
+/* ═══ Dashboard banner ════════════════════════════════ */
+.dash-banner { position: relative; border-radius: 1.25rem; overflow: hidden; min-height: 180px; }
+.dash-banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.dash-banner-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(2,6,23,.75), rgba(6,78,59,.55)); }
+.dash-banner-content { position: relative; z-index: 10; padding: 2rem; }
+
+/* ═══ Particles ═══════════════════════════════════════ */
+.particle { position: absolute; border-radius: 50%; background: #2dd4bf; opacity: .15; animation: float 8s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-20px) scale(1.1); } }
+@keyframes modalIn { from { transform: scale(.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* ═══ Invoice table ═══════════════════════════════════ */
+.table-clean th { text-align: left; font-size: .6875rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: .05em; padding: .75rem 0; border-bottom: 2px solid #e2e8f0; }
+.table-clean td { padding: .75rem 0; font-size: .875rem; border-bottom: 1px solid #f1f5f9; }
+.table-clean th.\\!text-right, .table-clean td.text-right { text-align: right; }
