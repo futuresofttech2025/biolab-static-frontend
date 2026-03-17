@@ -23,7 +23,7 @@ export default function PublicLayout() {
             ))}
           </div>
           <div className="hidden md:flex items-center gap-2">
-            <Link to="/register" className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-xl shadow-lg shadow-teal-500/20">Get Started</Link>
+            <span className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-xl shadow-lg shadow-teal-500/20 cursor-default">Get Started</span>
           </div>
           {/* Mobile hamburger */}
           <button className="md:hidden text-white p-1" onClick={() => setOpen(!open)}><Menu size={22} /></button>
@@ -36,7 +36,7 @@ export default function PublicLayout() {
                 className={({isActive}) => `block py-3 text-sm font-semibold border-b border-white/5 ${isActive ? 'text-teal-400' : 'text-slate-300'}`}>{l.label}</NavLink>
             ))}
             <div className="flex gap-2 mt-3">
-              <Link to="/register" onClick={() => setOpen(false)} className="flex-1 text-center py-2.5 text-sm font-bold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-xl">Get Started</Link>
+              <span className="flex-1 text-center py-2.5 text-sm font-bold text-white bg-gradient-to-r from-teal-500 to-emerald-500 rounded-xl cursor-default">Get Started</span>
             </div>
           </div>
         )}
