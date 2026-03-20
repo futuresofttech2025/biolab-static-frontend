@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FlaskConical, ShieldCheck, Zap, Globe, Microscope, Database, BarChart3, ArrowRight, CheckCircle } from 'lucide-react';
+import { ShieldCheck, Zap, Globe, Microscope, Database, BarChart3, ArrowRight, CheckCircle } from 'lucide-react';
 import { SectionHeader, Particles } from '../components/UI';
 
 const features = [
@@ -14,24 +14,25 @@ const features = [
 export default function HomePage() {
   return (
     <div>
-      <section className="bg-lab-hero relative flex items-center min-h-screen pt-20">
+      <section className="bg-lab-hero relative flex items-center min-h-screen pt-24">
         <Particles n={6} />
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 py-12 sm:py-20">
           <div className="max-w-2xl">
-<h1 className="text-3xl sm:text-5xl font-black font-display text-white mb-5 leading-tight">The Future of<br/><span className="bg-gradient-to-r from-teal-300 to-emerald-400 bg-clip-text text-transparent">Biotech Services</span></h1>
-            <p className="text-slate-300 text-base sm:text-lg max-w-lg mb-8">Enterprise-grade platform connecting researchers with certified labs. From discovery to compliance — all in one place.</p>
+            <h1 className="text-3xl sm:text-5xl font-black font-display text-white mb-5 leading-tight">The Future of<br/><span className="bg-gradient-to-r from-teal-300 to-emerald-400 bg-clip-text text-transparent">Biotech Services</span></h1>
+            <p className="text-slate-300 text-base sm:text-lg max-w-lg mb-8">The World's Science Infrastructure, At Your Fingertips.</p>
             <div className="flex flex-wrap gap-3 mb-10">
               <Link to="/register" className="px-6 py-3 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-bold rounded-xl shadow-lg shadow-teal-500/20 text-sm flex items-center gap-1">Start Free Trial <ArrowRight size={16} /></Link>
               <Link to="/services" className="px-6 py-3 border-2 border-teal-500 text-teal-400 font-bold rounded-xl text-sm hover:bg-teal-500/10 transition-all">Explore Services</Link>
             </div>
             <div className="flex flex-wrap gap-6 sm:gap-8">
-              {[{l:'Projects Delivered'},{l:'Uptime SLA'},{l:'Lab Partners'}].map((s,i)=>(
-                <div key={i}><p className="text-teal-300 font-extrabold font-display text-xl sm:text-2xl">Coming soon</p><p className="text-slate-400 text-[10px] font-semibold uppercase tracking-wider">{s.l}</p></div>
+              {[{v:'0',l:'Projects Delivered'},{v:'0',l:'Uptime SLA'},{v:'0',l:'Lab Partners'}].map((s,i)=>(
+                <div key={i}><p className="text-teal-300 font-extrabold font-display text-xl sm:text-2xl">{s.v}</p><p className="text-slate-400 text-[10px] font-semibold uppercase tracking-wider">{s.l}</p></div>
               ))}
             </div>
           </div>
         </div>
       </section>
+
       <section className="bg-lab-dna py-16 sm:py-24">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <div className="text-center mb-12"><SectionHeader tag="Why FrontierBioLabs" title="Built for Modern Research" desc="Everything you need to manage biotech projects from start to finish." /></div>
@@ -46,6 +47,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <section className="bg-lab-tubes relative py-16 sm:py-24">
         <Particles n={4} />
         <div className="relative z-10 max-w-[700px] mx-auto px-4 sm:px-6 text-center">
@@ -63,3 +65,4 @@ export default function HomePage() {
     </div>
   );
 }
+

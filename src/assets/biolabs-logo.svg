@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" fill="none">
+  <!-- Icon mark -->
+  <g transform="translate(0, 4)">
+    <!-- Outer rounded square border -->
+    <rect x="2" y="2" width="68" height="68" rx="10" ry="10" stroke="#22c55e" stroke-width="3.5" fill="none"/>
+
+    <!-- Letter B -->
+    <text x="13" y="44" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#22c55e">B</text>
+
+    <!-- Flask / beaker shape in center -->
+    <g transform="translate(34, 14)">
+      <!-- Flask neck -->
+      <rect x="5" y="0" width="10" height="10" rx="1" fill="#22c55e"/>
+      <!-- Flask body -->
+      <path d="M2 12 L0 32 Q0 38 6 38 L14 38 Q20 38 20 32 L18 12 Z" fill="#22c55e"/>
+      <!-- Bubbles in flask -->
+      <circle cx="7" cy="26" r="2.5" fill="#15803d"/>
+      <circle cx="13" cy="20" r="1.8" fill="#15803d"/>
+    </g>
+
+    <!-- Letter F -->
+    <text x="46" y="44" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#22c55e">F</text>
+  </g>
+
+  <!-- BIOLABS text -->
+  <text x="82" y="42" font-family="Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="1.5" fill="#22c55e">BIOLABS</text>
+
+  <!-- FRONTIER text -->
+  <text x="83" y="62" font-family="Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4" fill="#16a34a">FRONTIER</text>
+</svg>
